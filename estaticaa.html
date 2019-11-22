@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Inicio</title>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var url = 'http://leonardodavincischool.cl/estatico/contenido.html'; // Solo cambia lo que esta en rojo por tu url (cuando la tengas)
+				
+				$('#navegacion li a').click(function(e) {
+					e.preventDefault(); // Previene la acción por defecto, que sería enviarte a otra página
+					var href = url + " #" + $(this).attr('href'); // Esta línea extrae el contenido del atributo href del enlace clickeado
+					console.log(href);
+					$('#contenido').load(href); // Esta línea simplemente carga el contenido dentro del div 'contenido'
+				});
+				
+      });    
+    </script>
+  </head>
+  <body>
+    <div id="cabecera">contenido...</div>
+    <div id="navegacion"><!-- Puedes cambiar los nombres aquí, pero recuerda cambiarlos en el script (#navegacion) -->
+      <ul>
+        <li><a href='inicio'>Inicio</a></li>
+        <li><a href='noticias'>Noticias</a></li>
+        <li><a href='etcetera'>Etc&acute;tera</a></li>
+      </ul>
+    </div>
+    <div id="contenido"></div>
+  </body>
+</html>
