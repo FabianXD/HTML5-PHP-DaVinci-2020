@@ -6,15 +6,15 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
+ 
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+ 
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 /*
@@ -28,13 +28,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 /*
@@ -42,12 +42,12 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /*
@@ -62,7 +62,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /*
@@ -70,9 +70,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -80,7 +80,7 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 /* ==========================================================================
@@ -88,17 +88,505 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-/* ==========================================================================
+body {
+    background-color: #C0C0C0;
+}
+
+tr,
+th,
+td {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+a:link {
+    color: #831A38;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #831A38;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #831A38;
+}
+
+a:active {
+    text-decoration: none;
+    color: #831A38;
+}
+
+.center {
+    width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px 12px 12px 12px;
+    border: 5px solid #831A38;
+    background-color: #FFF;
+    border-spacing: 0;
+}
+
+#menu {
+    width: 100%;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navtop {
+    background-color: #fff;
+}
+
+.navtop li {
+    border-right: solid #831A38
+}
+
+.navtop li a {
+    min-height: 16px;
+    font-size: 13px;
+    background-color: #fff;
+    color: darkgreen;
+    text-decoration: none;
+    padding: 0px 4px 0px 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.navtop img {
+    min-height: 16px;
+    border-collapse: collapse;
+    display: block;
+    background-color: #fff;
+    color: #fff;
+}
+
+.navtop li a:hover {
+    background-color: #B8B8B8;
+}
+
+.navtop>li {
+    float: left;
+    min-height: 16px;
+}
+
+.navtop li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.navtop li:hover>ul {
+    display: block;
+}
+
+.plogo {
+    width: 100%;
+    height: 17px;
+}
+
+#tablacontenido {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.imginicio {
+    width: 770px;
+    height: auto;
+    border: 0px;
+}
+
+#menulateral {
+    align-content: center;
+    vertical-align: top;
+    background-color: #fff;
+    width: 116px;
+}
+
+.menulaterallogo {
+    width: 146px;
+    height: 52px;
+    border: 0px;
+    margin-left: 0px;
+}
+
+.navlateral li a:hover {
+    color: #831A38;
+}
+
+.navlateral li {
+    border-left: solid #831A38;
+    border-bottom: solid #fff;
+    max-width: 146px;
+}
+
+.navlateral li:hover {
+    border-bottom: solid #831A38;
+    border-left: solid #831A38;
+}
+
+.navlateral li a {
+    min-height: 14px;
+    font-size: 14px;
+    background-color: #fff;
+    color: green;
+    text-decoration: none;
+    padding: 2.5px 0px 2.5px 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.imglateral {
+    width: 116px;
+    height: 33px;
+    border: 0px;
+}
+
+.tdnoticia {
+    vertical-align: top;
+    width: 95%;
+    text-align: justify;
+}
+
+.left {
+    text-align: left;
+    align-content: left;
+}
+
+.tdnoticiai {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+    background-color: #831A38;
+}
+
+#tablanoticia {
+    vertical-align: top;
+    width: 100%;
+    padding: 20px;
+}
+
+.noticia {
+    text-align: left;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #336666;
+    width: 75%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo_noticias3 {
+    text-align: left;
+    font-family: "Trebuchet MS";
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF6600;
+}
+
+.texto {
+    text-align: justify;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+}
+
+#imgcontacto {
+    width: 50px;
+    height: 42px;
+}
+
+#textofin {
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+.imgnoticia {
+    align-content: center;
+    width: 95%;
+    height: auto;
+    border: 0px;
+}
+
+#contenedornoticia {
+    text-align: center;
+}
+
+.imgtitulo {
+    width: 20%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulonoticia {
+    width: 75%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#contenedornoticiai {
+    background-color: #831A38;
+    text-align: center;
+}
+
+.noti3 {
+    width: 30%;
+    height: auto;
+    border: solid 7px #831A38;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.imgindex {
+    width: 100%;
+    height: 120px;
+}
+
+.imgver {
+    width: 50px;
+    height: 15px;
+}
+
+.imgdire {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.imgnivel {
+    float: left;
+    width: 45%;
+    height: auto;
+    margin: 10px;
+}
+
+.flatleft {
+    float: left;
+}
+
+.diven1 {
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+.divgris {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #e0dada;
+    margin: 5px;
+}
+
+.diven2 {
+    width: 60%;
+    height: auto;
+    float: left;
+}
+
+.imguniforme {
+    width: 90%;
+    height: auto;
+}
+
+.sicolor {
+    background-color: #FFEBDD;
+}
+
+.tablaremar {
+    text-align: left;
+    border-radius: 20px 20px 20px 20px;
+    /*otros navegadores*/
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 5px solid #831A38;
+    background-color: rgb(255, 235, 221);
+    width: 100%;
+}
+
+.tablaremar td {
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #831A38;
+    width: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.textalingcenter {
+    font-size: 14px;
+    text-align: center;
+    align-content: center;
+}
+
+.autocenter {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.imgextra {
+    width: 95%;
+    height: auto;
+}
+
+.imgper {
+    float: left;
+    width: 90px;
+    height: 125px;
+}
+
+.imgpers {
+    float: left;
+    width: 80px;
+    height: 100px;
+}
+
+.imgbio {
+    float: left;
+    width: 260px;
+    height: auto;
+}
+
+.imgpers2 {
+    float: left;
+    width: 90px;
+    height: 90px;
+}
+
+.imgorga {
+    width: 100%;
+    height: auto;
+}
+
+.imghist 
+{
+    width: 100%;
+    height: auto;
+}
+
+.margen2 {
+    margin: 10px;
+}
+
+.margenjusti {
+    text-align: justify;
+}
+
+
+/* css pagina anterior */
+
+.items {
+    font-family: "Trebuchet MS";
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #831A38;
+    background-position: left;
+    text-align: left;
+}
+
+.titulo_noticias3 {
+    text-align: left;
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF6600;
+}
+
+.bajada {
+    font-family: "Trebuchet MS";
+    font-size: 11px;
+    font-weight: normal;
+    color: #666666;
+    text-align: center;
+}
+
+.titulo_noticia {
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 12px;
+    text-align: left;
+}
+
+.txt_noticias {
+    font-family: "Trebuchet MS";
+    font-size: 11px;
+    color: #FFFFFF;
+    text-align: left;
+    font-weight: normal;
+}
+
+.txt_noticiaschico {
+    font-family: "Trebuchet MS";
+    font-size: 10px;
+    color: #6C938D;
+    text-align: left;
+    font-weight: normal;
+    line-height: 11px;
+}
+
+.Estilo1 {
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #336666;
+    text-align: left;
+}
+
+.Estilo9 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+/*==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -262,4 +750,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
